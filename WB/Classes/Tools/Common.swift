@@ -29,4 +29,3 @@ func HRandomColor() -> UIColor {
     return RGB(r: r, g: g, b: b)
 }
 
-

@@ -8,11 +8,15 @@
 
 import UIKit
 
-class HMessageViewController: UIViewController {
+class HMessageViewController: HBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        if !isLogin {
+            visitorView?.setInfo(imageName: "visitordiscover_image_message", title: "登陆后, 最新、最热微博尽在掌握, 不会再与实事潮流擦肩而过")
+            return
+        }
         // Do any additional setup after loading the view.
     }
     

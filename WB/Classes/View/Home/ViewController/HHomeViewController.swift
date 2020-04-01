@@ -8,10 +8,16 @@
 
 import UIKit
 
-class HHomeViewController: UIViewController {
+class HHomeViewController: HBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if !isLogin {
+            visitorView?.setInfo(imageName: nil, title: nil)
+            return
+        }
+        
         setupUI()
     }
     

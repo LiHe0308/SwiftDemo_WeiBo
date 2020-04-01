@@ -22,9 +22,9 @@ class HTabBarViewController: UITabBarController {
         }
         
         addChild(HHomeViewController(), title: "首页", ImageName: "tabbar_home")
-        addChild(HHomeViewController(), title: "消息", ImageName: "tabbar_message_center")
-        addChild(HHomeViewController(), title: "发现", ImageName: "tabbar_discover")
-        addChild(HHomeViewController(), title: "我", ImageName: "tabbar_profile")
+        addChild(HMessageViewController(), title: "消息", ImageName: "tabbar_message_center")
+        addChild(HDiscoverViewController(), title: "发现", ImageName: "tabbar_discover")
+        addChild(HMineViewController(), title: "我", ImageName: "tabbar_profile")
     }
 }
 

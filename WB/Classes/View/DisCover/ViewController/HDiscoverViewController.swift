@@ -8,11 +8,15 @@
 
 import UIKit
 
-class HDiscoverViewController: UIViewController {
+class HDiscoverViewController: HBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        if !isLogin {
+             visitorView?.setInfo(imageName: "visitordiscover_image_message", title: "登陆后, 别人评论你的微博, 发给你的消息都会在这里收到通知")
+             return
+         }
         // Do any additional setup after loading the view.
     }
     
