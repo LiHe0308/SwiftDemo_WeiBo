@@ -11,7 +11,7 @@ import UIKit
 class HBaseViewController: UIViewController {
 
     // 记录用户是否登录的状态
-    let isLogin: Bool = true
+    let isLogin: Bool = HOAuthViewModel.shared.isLogin
     
     // 访客视图: 定义成可选值, 在需要使用的地方, 再实例化
     var visitorView: HVisitorView?
@@ -64,5 +64,10 @@ extension HBaseViewController{
     // MARK: 登录/注册 都走这个方法
     @objc private func loginButtonClick() {
         print("登录-注册")
+        // 模态形式弹出微博授权控制器 -> 带有导航条的vc
+        let oauthVc = HOAuthViewController()
+        let nav = HNavigationController(rootViewController: oauthVc)
+        nav.modalPresentationStyle = .fullScreen
+        self.present(nav, animated: true, completion: nil)
     }
 }

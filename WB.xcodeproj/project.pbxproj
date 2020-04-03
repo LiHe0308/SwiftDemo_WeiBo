@@ -22,11 +22,32 @@
 		140347FA242B7C4200E41F78 /* HNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140347F9242B7C4200E41F78 /* HNavigationController.swift */; };
 		140347FC242B862D00E41F78 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140347FB242B862D00E41F78 /* Common.swift */; };
 		145099A5243381AD0044C7D1 /* HNetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145099A4243381AD0044C7D1 /* HNetworkTools.swift */; };
+		145099CA243474A60044C7D1 /* HOAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145099C9243474A60044C7D1 /* HOAuthViewController.swift */; };
+		145099F024348ECB0044C7D1 /* Pods_WB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46F35A88F212C19506007BBE /* Pods_WB.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		145099F124348ECB0044C7D1 /* Pods_WB.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 46F35A88F212C19506007BBE /* Pods_WB.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		145099F92434DC630044C7D1 /* HUserAccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145099F82434DC630044C7D1 /* HUserAccountModel.swift */; };
+		14509A202435EB320044C7D1 /* MyAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14509A1F2435EB320044C7D1 /* MyAdapter.swift */; };
+		14509A262435F5930044C7D1 /* HOAuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14509A252435F5930044C7D1 /* HOAuthViewModel.swift */; };
+		1455D2A82436DDEE00E937B4 /* HWelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1455D2A72436DDEE00E937B4 /* HWelcomeViewController.swift */; };
+		1455D2AA2436E42800E937B4 /* Ext+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1455D2A92436E42800E937B4 /* Ext+UIImageView.swift */; };
 		14AC985224305FFE00C51EFA /* HBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AC985124305FFE00C51EFA /* HBaseViewController.swift */; };
 		14AC98542430604500C51EFA /* HVisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AC98532430604500C51EFA /* HVisitorView.swift */; };
 		14AC98562430B5F100C51EFA /* ThirdPartyHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AC98552430B5F100C51EFA /* ThirdPartyHeader.swift */; };
-		7BD98A0C3AD8B9C214E00CE7 /* Pods_WB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46F35A88F212C19506007BBE /* Pods_WB.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		145099F224348ECB0044C7D1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				145099F124348ECB0044C7D1 /* Pods_WB.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		140347B92429E20900E41F78 /* WB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WB.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +67,24 @@
 		140347F9242B7C4200E41F78 /* HNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNavigationController.swift; sourceTree = "<group>"; };
 		140347FB242B862D00E41F78 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		145099A4243381AD0044C7D1 /* HNetworkTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNetworkTools.swift; sourceTree = "<group>"; };
+		145099C9243474A60044C7D1 /* HOAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HOAuthViewController.swift; sourceTree = "<group>"; };
+		145099CB24348CD20044C7D1 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		145099CC24348CD20044C7D1 /* Differentiator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Differentiator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		145099CD24348CD20044C7D1 /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		145099CE24348CD20044C7D1 /* RxAtomic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxAtomic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		145099CF24348CD20044C7D1 /* RxCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		145099D024348CD20044C7D1 /* RxDataSources.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxDataSources.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		145099D124348CD20044C7D1 /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		145099D224348CD20044C7D1 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		145099E824348D7C0044C7D1 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		145099EE24348E460044C7D1 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		145099F3243490160044C7D1 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		145099F82434DC630044C7D1 /* HUserAccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUserAccountModel.swift; sourceTree = "<group>"; };
+		14509A1D2434EEC70044C7D1 /* ObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		14509A1F2435EB320044C7D1 /* MyAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAdapter.swift; sourceTree = "<group>"; };
+		14509A252435F5930044C7D1 /* HOAuthViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HOAuthViewModel.swift; sourceTree = "<group>"; };
+		1455D2A72436DDEE00E937B4 /* HWelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWelcomeViewController.swift; sourceTree = "<group>"; };
+		1455D2A92436E42800E937B4 /* Ext+UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UIImageView.swift"; sourceTree = "<group>"; };
 		14AC985124305FFE00C51EFA /* HBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBaseViewController.swift; sourceTree = "<group>"; };
 		14AC98532430604500C51EFA /* HVisitorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HVisitorView.swift; sourceTree = "<group>"; };
 		14AC98552430B5F100C51EFA /* ThirdPartyHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdPartyHeader.swift; sourceTree = "<group>"; };
@@ -59,7 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BD98A0C3AD8B9C214E00CE7 /* Pods_WB.framework in Frameworks */,
+				145099F024348ECB0044C7D1 /* Pods_WB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +108,18 @@
 		0A07B68130CD858762647EAA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				14509A1D2434EEC70044C7D1 /* ObjectMapper.framework */,
+				145099F3243490160044C7D1 /* Alamofire.framework */,
+				145099EE24348E460044C7D1 /* Alamofire.framework */,
+				145099E824348D7C0044C7D1 /* Alamofire.framework */,
+				145099CB24348CD20044C7D1 /* Alamofire.framework */,
+				145099CC24348CD20044C7D1 /* Differentiator.framework */,
+				145099CD24348CD20044C7D1 /* Kingfisher.framework */,
+				145099CE24348CD20044C7D1 /* RxAtomic.framework */,
+				145099CF24348CD20044C7D1 /* RxCocoa.framework */,
+				145099D024348CD20044C7D1 /* RxDataSources.framework */,
+				145099D124348CD20044C7D1 /* RxSwift.framework */,
+				145099D224348CD20044C7D1 /* SnapKit.framework */,
 				46F35A88F212C19506007BBE /* Pods_WB.framework */,
 			);
 			name = Frameworks;
@@ -119,6 +170,7 @@
 		140347D12429E45300E41F78 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				14509A242435F5930044C7D1 /* OAuth */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -129,6 +181,7 @@
 				140347FB242B862D00E41F78 /* Common.swift */,
 				14AC98552430B5F100C51EFA /* ThirdPartyHeader.swift */,
 				145099A4243381AD0044C7D1 /* HNetworkTools.swift */,
+				14509A1F2435EB320044C7D1 /* MyAdapter.swift */,
 				140347F4242B50B700E41F78 /* Extension */,
 			);
 			path = Tools;
@@ -149,6 +202,8 @@
 				140347DB2429E45300E41F78 /* Message */,
 				140347D82429E45300E41F78 /* DisCover */,
 				140347E12429EC2800E41F78 /* Mine */,
+				145099C62434747A0044C7D1 /* OAuth */,
+				1455D2A42436DDD600E937B4 /* Welcome */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -282,8 +337,74 @@
 			isa = PBXGroup;
 			children = (
 				140347F5242B511B00E41F78 /* Ext+UIBarButtonItem.swift */,
+				1455D2A92436E42800E937B4 /* Ext+UIImageView.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		145099C62434747A0044C7D1 /* OAuth */ = {
+			isa = PBXGroup;
+			children = (
+				145099F72434DC3F0044C7D1 /* Model */,
+				145099C72434747A0044C7D1 /* VIew */,
+				145099C82434747A0044C7D1 /* ViewController */,
+			);
+			path = OAuth;
+			sourceTree = "<group>";
+		};
+		145099C72434747A0044C7D1 /* VIew */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VIew;
+			sourceTree = "<group>";
+		};
+		145099C82434747A0044C7D1 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				145099C9243474A60044C7D1 /* HOAuthViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		145099F72434DC3F0044C7D1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				145099F82434DC630044C7D1 /* HUserAccountModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		14509A242435F5930044C7D1 /* OAuth */ = {
+			isa = PBXGroup;
+			children = (
+				14509A252435F5930044C7D1 /* HOAuthViewModel.swift */,
+			);
+			path = OAuth;
+			sourceTree = "<group>";
+		};
+		1455D2A42436DDD600E937B4 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				1455D2A52436DDD600E937B4 /* View */,
+				1455D2A62436DDD600E937B4 /* ViewController */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		1455D2A52436DDD600E937B4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1455D2A62436DDD600E937B4 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1455D2A72436DDEE00E937B4 /* HWelcomeViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		32D8F1717B57176C15E8B8FE /* Pods */ = {
@@ -307,6 +428,7 @@
 				140347B62429E20900E41F78 /* Frameworks */,
 				140347B72429E20900E41F78 /* Resources */,
 				CFFB09D59EDB639DB51C9020 /* [CP] Embed Pods Frameworks */,
+				145099F224348ECB0044C7D1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -413,16 +535,22 @@
 				140347E92429F7C400E41F78 /* HMessageViewController.swift in Sources */,
 				145099A5243381AD0044C7D1 /* HNetworkTools.swift in Sources */,
 				14AC98562430B5F100C51EFA /* ThirdPartyHeader.swift in Sources */,
+				145099F92434DC630044C7D1 /* HUserAccountModel.swift in Sources */,
 				140347E72429F7BA00E41F78 /* HHomeViewController.swift in Sources */,
 				14AC985224305FFE00C51EFA /* HBaseViewController.swift in Sources */,
 				140347EB2429F7D200E41F78 /* HDiscoverViewController.swift in Sources */,
 				140347BD2429E20900E41F78 /* AppDelegate.swift in Sources */,
+				14509A202435EB320044C7D1 /* MyAdapter.swift in Sources */,
+				1455D2A82436DDEE00E937B4 /* HWelcomeViewController.swift in Sources */,
 				140347FC242B862D00E41F78 /* Common.swift in Sources */,
 				140347EF242A034F00E41F78 /* HTabBar.swift in Sources */,
+				1455D2AA2436E42800E937B4 /* Ext+UIImageView.swift in Sources */,
 				140347F8242B567600E41F78 /* HTempViewController.swift in Sources */,
 				140347BF2429E20A00E41F78 /* SceneDelegate.swift in Sources */,
 				140347E52429ED9500E41F78 /* HTabBarViewController.swift in Sources */,
+				145099CA243474A60044C7D1 /* HOAuthViewController.swift in Sources */,
 				140347ED2429F7DD00E41F78 /* HMineViewController.swift in Sources */,
+				14509A262435F5930044C7D1 /* HOAuthViewModel.swift in Sources */,
 				140347F6242B511B00E41F78 /* Ext+UIBarButtonItem.swift in Sources */,
 				14AC98542430604500C51EFA /* HVisitorView.swift in Sources */,
 				140347FA242B7C4200E41F78 /* HNavigationController.swift in Sources */,
@@ -551,6 +679,7 @@
 			baseConfigurationReference = E4A53B620F83A3491BFB0C2A /* Pods-WB.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RLME2A7375;
 				INFOPLIST_FILE = WB/Info.plist;
@@ -559,8 +688,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Heli.WB;
+				PRODUCT_BUNDLE_IDENTIFIER = Heli.WB1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -571,6 +701,7 @@
 			baseConfigurationReference = 72D21272272686C3612C2BEE /* Pods-WB.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RLME2A7375;
 				INFOPLIST_FILE = WB/Info.plist;
@@ -579,8 +710,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Heli.WB;
+				PRODUCT_BUNDLE_IDENTIFIER = Heli.WB1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

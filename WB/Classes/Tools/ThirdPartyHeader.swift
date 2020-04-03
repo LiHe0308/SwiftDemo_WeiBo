@@ -8,4 +8,4 @@
 
 import Foundation
 import SnapKit
-
+import Kingfisher

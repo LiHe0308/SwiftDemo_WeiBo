@@ -29,3 +29,6 @@ func HRandomColor() -> UIColor {
     return RGB(r: r, g: g, b: b)
 }
 
+// 通知需要的名称
+/// 登陆成功
+let CHANGEVC = "NoticeOfSuccessfulLogin"

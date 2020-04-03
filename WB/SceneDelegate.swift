@@ -18,11 +18,32 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let Kscene = (scene as? UIWindowScene) else { return }
-        
         window = UIWindow(windowScene: Kscene)
         window?.backgroundColor = UIColor.white
-        window?.rootViewController = HTabBarViewController()
+        window?.rootViewController = setupRootVc()
         window?.makeKeyAndVisible()
+        
+        // 注册通知, 登陆成功后切换根控制器
+        NotificationCenter.default.addObserver(self, selector: #selector(changeRootVc), name: NSNotification.Name(rawValue: CHANGEVC), object: nil)
+    }
+    
+    @objc private func changeRootVc(noti: Notification) {
+        
+        if noti.object == nil {
+            window?.rootViewController = HWelcomeViewController()
+        } else{
+            window?.rootViewController = HTabBarViewController()
+        }
+    }
+    
+    /**
+     - 程序已启动, 切换根控制器
+        - 如果没有登录 rootVc = HTabBarViewController()
+        - 已经登录了 rootVc = HWelcomeViewController()
+     */
+    // MARK: 设置根控制器
+    private func setupRootVc() -> UIViewController {
+        return HOAuthViewModel.shared.isLogin != false ? HWelcomeViewController() : HTabBarViewController()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -53,6 +74,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // to restore the scene back to its current state.
     }
 
-
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
 }
 
