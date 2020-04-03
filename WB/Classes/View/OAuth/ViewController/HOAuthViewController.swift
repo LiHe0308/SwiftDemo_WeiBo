@@ -37,10 +37,8 @@ import WebKit  // Swift 5.0之后 使用WKWebView 需要引入头文件了, 且U
 let APPKEY = "3005221540"
 let APPSECRET = "f2fd98aeeea217fe40af8266a8af5334"
 let REDIRECT_URI = "https://www.baidu.com"  // 重定向的地址 -> 设置的回调页, 需要和微博开放平台的高级信息中设置的相同
-//let WBNAME = "18513041937"
-//let WBPASSWD = "ABC123456"
-let WBNAME = "15665075553"
-let WBPASSWD = "Lihe1234"
+let WBNAME = "18513041937"      // 账号
+let WBPASSWD = "ABC123456"      // 密码
 
 class HOAuthViewController: UIViewController {
 
