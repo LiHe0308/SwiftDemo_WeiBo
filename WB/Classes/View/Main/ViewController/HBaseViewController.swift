@@ -15,6 +15,9 @@ class HBaseViewController: UIViewController {
     
     // 访客视图: 定义成可选值, 在需要使用的地方, 再实例化
     var visitorView: HVisitorView?
+    
+    // 列表视图 - 登陆之后显示列表视图
+    var tableView: UITableView = UITableView()
 
     /** loadView
      1. 什么时候被调用？
@@ -34,7 +37,7 @@ class HBaseViewController: UIViewController {
     override func loadView() {
         
         if isLogin {
-            super.loadView()
+            view = tableView
         } else {
             // 添加未登录的情况下的 导航栏按钮
             setupNav()

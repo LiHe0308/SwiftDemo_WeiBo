@@ -9,7 +9,7 @@ target 'WB' do
   pod 'Alamofire'      # 用于网络请求
   pod 'Kingfisher'     # SDWebImage swift 版
   pod 'ObjectMapper'   # 字典转模型
-  
+  pod 'pop'            # facebook 的动画库
   #pod 'RxSwift'
   #pod 'RxCocoa'
   #pod 'RxDataSources'   # RxSwift中用于设置UITableView/UICollectionView data sources

@@ -19,6 +19,9 @@ class HTabBarViewController: UITabBarController {
         setValue(tabBar, forKey: "tabBar")
         tabBar.closure = {
             print("plus button click \(#function)")
+            let composeView = HComposeView()
+            // 子控件内部实现添加到父控件的操作
+            composeView.show(target: self)
         }
         
         addChild(HHomeViewController(), title: "首页", ImageName: "tabbar_home")

@@ -128,7 +128,7 @@ class HVisitorView: UIView {
     // MARK: 懒加载 底部说明 控件
     private lazy var messageLabel: UILabel = {
         let lab = UILabel()
-        lab.font = UIFont.systemFont(ofSize: 14)
+        lab.font = UIFont.systemFont(ofSize: HNORMALFONTSIZE)
         lab.textColor = .darkGray
         lab.numberOfLines = 0
         lab.textAlignment = .center
@@ -142,7 +142,7 @@ class HVisitorView: UIView {
         btn.setTitle("登录", for: UIControl.State.normal)
         btn.setTitleColor(UIColor.darkGray, for: UIControl.State.normal)
         btn.setTitleColor(THEMECOLOR, for: UIControl.State.highlighted)
-        btn.titleLabel?.font = UIFont.systemFont(ofSize: 14)
+        btn.titleLabel?.font = UIFont.systemFont(ofSize: HNORMALFONTSIZE)
         btn.addTarget(self, action: #selector(leftBtnClick), for: UIControl.Event.touchUpInside)
         return btn
     }()
@@ -153,7 +153,7 @@ class HVisitorView: UIView {
         btn.setTitle("注册", for: UIControl.State.normal)
         btn.setTitleColor(UIColor.darkGray, for: UIControl.State.normal)
         btn.setTitleColor(THEMECOLOR, for: UIControl.State.highlighted)
-        btn.titleLabel?.font = UIFont.systemFont(ofSize: 14)
+        btn.titleLabel?.font = UIFont.systemFont(ofSize: HNORMALFONTSIZE)
         btn.addTarget(self, action: #selector(rightBtnClick), for: UIControl.Event.touchUpInside)
         return btn
     }()

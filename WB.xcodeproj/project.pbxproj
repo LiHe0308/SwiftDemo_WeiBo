@@ -25,14 +25,31 @@
 		145099CA243474A60044C7D1 /* HOAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145099C9243474A60044C7D1 /* HOAuthViewController.swift */; };
 		145099F024348ECB0044C7D1 /* Pods_WB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46F35A88F212C19506007BBE /* Pods_WB.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		145099F124348ECB0044C7D1 /* Pods_WB.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 46F35A88F212C19506007BBE /* Pods_WB.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		145099F92434DC630044C7D1 /* HUserAccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145099F82434DC630044C7D1 /* HUserAccountModel.swift */; };
 		14509A202435EB320044C7D1 /* MyAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14509A1F2435EB320044C7D1 /* MyAdapter.swift */; };
 		14509A262435F5930044C7D1 /* HOAuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14509A252435F5930044C7D1 /* HOAuthViewModel.swift */; };
 		1455D2A82436DDEE00E937B4 /* HWelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1455D2A72436DDEE00E937B4 /* HWelcomeViewController.swift */; };
 		1455D2AA2436E42800E937B4 /* Ext+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1455D2A92436E42800E937B4 /* Ext+UIImageView.swift */; };
+		14748AE32438D130004CEC32 /* HHomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14748AE22438D130004CEC32 /* HHomeModel.swift */; };
 		14AC985224305FFE00C51EFA /* HBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AC985124305FFE00C51EFA /* HBaseViewController.swift */; };
 		14AC98542430604500C51EFA /* HVisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AC98532430604500C51EFA /* HVisitorView.swift */; };
 		14AC98562430B5F100C51EFA /* ThirdPartyHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AC98552430B5F100C51EFA /* ThirdPartyHeader.swift */; };
+		14D382D42438DB6600B33F24 /* HUserAccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D382D32438DB6600B33F24 /* HUserAccountModel.swift */; };
+		14D382D72438DB9800B33F24 /* HHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D382D62438DB9800B33F24 /* HHomeViewModel.swift */; };
+		14D382D92438E6E000B33F24 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D382D82438E6E000B33F24 /* HomeCell.swift */; };
+		14D382DB2438E84900B33F24 /* HomeOriginalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D382DA2438E84900B33F24 /* HomeOriginalView.swift */; };
+		14D382DD2438F3FF00B33F24 /* HUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D382DC2438F3FF00B33F24 /* HUserModel.swift */; };
+		14D382DF2438F74400B33F24 /* HStatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D382DE2438F74400B33F24 /* HStatusViewModel.swift */; };
+		14D382E12439ACA600B33F24 /* HomeBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D382E02439ACA600B33F24 /* HomeBottomView.swift */; };
+		14D382E32439B70500B33F24 /* HomeRetweetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D382E22439B70500B33F24 /* HomeRetweetView.swift */; };
+		14D382E52439C5C400B33F24 /* HomeOriginalPictureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D382E42439C5C400B33F24 /* HomeOriginalPictureView.swift */; };
+		14D382E72439C79600B33F24 /* HPictureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D382E62439C79600B33F24 /* HPictureModel.swift */; };
+		14D3830F243C734100B33F24 /* RefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D3830E243C734100B33F24 /* RefreshControl.swift */; };
+		14D38311243C7DC400B33F24 /* Ext+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D38310243C7DC400B33F24 /* Ext+String.swift */; };
+		14D38335243CC79500B33F24 /* HComposeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D38334243CC79500B33F24 /* HComposeView.swift */; };
+		14D38337243DA66200B33F24 /* HComposeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D38336243DA66200B33F24 /* HComposeButton.swift */; };
+		14D38339243DA70900B33F24 /* compose.plist in Resources */ = {isa = PBXBuildFile; fileRef = 14D38338243DA70900B33F24 /* compose.plist */; };
+		14D3833C243DA73000B33F24 /* HComposeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D3833B243DA73000B33F24 /* HComposeModel.swift */; };
+		14D3833F243DC42400B33F24 /* HComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D3833E243DC42400B33F24 /* HComposeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -79,15 +96,32 @@
 		145099E824348D7C0044C7D1 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		145099EE24348E460044C7D1 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		145099F3243490160044C7D1 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		145099F82434DC630044C7D1 /* HUserAccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUserAccountModel.swift; sourceTree = "<group>"; };
 		14509A1D2434EEC70044C7D1 /* ObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14509A1F2435EB320044C7D1 /* MyAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAdapter.swift; sourceTree = "<group>"; };
 		14509A252435F5930044C7D1 /* HOAuthViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HOAuthViewModel.swift; sourceTree = "<group>"; };
 		1455D2A72436DDEE00E937B4 /* HWelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWelcomeViewController.swift; sourceTree = "<group>"; };
 		1455D2A92436E42800E937B4 /* Ext+UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UIImageView.swift"; sourceTree = "<group>"; };
+		14748AE22438D130004CEC32 /* HHomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHomeModel.swift; sourceTree = "<group>"; };
 		14AC985124305FFE00C51EFA /* HBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBaseViewController.swift; sourceTree = "<group>"; };
 		14AC98532430604500C51EFA /* HVisitorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HVisitorView.swift; sourceTree = "<group>"; };
 		14AC98552430B5F100C51EFA /* ThirdPartyHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdPartyHeader.swift; sourceTree = "<group>"; };
+		14D382D32438DB6600B33F24 /* HUserAccountModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUserAccountModel.swift; sourceTree = "<group>"; };
+		14D382D62438DB9800B33F24 /* HHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHomeViewModel.swift; sourceTree = "<group>"; };
+		14D382D82438E6E000B33F24 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		14D382DA2438E84900B33F24 /* HomeOriginalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeOriginalView.swift; sourceTree = "<group>"; };
+		14D382DC2438F3FF00B33F24 /* HUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUserModel.swift; sourceTree = "<group>"; };
+		14D382DE2438F74400B33F24 /* HStatusViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HStatusViewModel.swift; sourceTree = "<group>"; };
+		14D382E02439ACA600B33F24 /* HomeBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBottomView.swift; sourceTree = "<group>"; };
+		14D382E22439B70500B33F24 /* HomeRetweetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRetweetView.swift; sourceTree = "<group>"; };
+		14D382E42439C5C400B33F24 /* HomeOriginalPictureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeOriginalPictureView.swift; sourceTree = "<group>"; };
+		14D382E62439C79600B33F24 /* HPictureModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPictureModel.swift; sourceTree = "<group>"; };
+		14D3830E243C734100B33F24 /* RefreshControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshControl.swift; sourceTree = "<group>"; };
+		14D38310243C7DC400B33F24 /* Ext+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+String.swift"; sourceTree = "<group>"; };
+		14D38334243CC79500B33F24 /* HComposeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HComposeView.swift; sourceTree = "<group>"; };
+		14D38336243DA66200B33F24 /* HComposeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HComposeButton.swift; sourceTree = "<group>"; };
+		14D38338243DA70900B33F24 /* compose.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = compose.plist; sourceTree = "<group>"; };
+		14D3833B243DA73000B33F24 /* HComposeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HComposeModel.swift; sourceTree = "<group>"; };
+		14D3833E243DC42400B33F24 /* HComposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HComposeViewController.swift; sourceTree = "<group>"; };
 		46F35A88F212C19506007BBE /* Pods_WB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		72D21272272686C3612C2BEE /* Pods-WB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WB.release.xcconfig"; path = "Target Support Files/Pods-WB/Pods-WB.release.xcconfig"; sourceTree = "<group>"; };
 		E4A53B620F83A3491BFB0C2A /* Pods-WB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WB.debug.xcconfig"; path = "Target Support Files/Pods-WB/Pods-WB.debug.xcconfig"; sourceTree = "<group>"; };
@@ -151,6 +185,7 @@
 				140347BE2429E20A00E41F78 /* SceneDelegate.swift */,
 				140347F0242AF74D00E41F78 /* LaunchScreen.storyboard */,
 				140347C52429E20F00E41F78 /* Assets.xcassets */,
+				14D38338243DA70900B33F24 /* compose.plist */,
 				140347CA2429E20F00E41F78 /* Info.plist */,
 			);
 			path = WB;
@@ -170,6 +205,7 @@
 		140347D12429E45300E41F78 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				14D382D52438DB8900B33F24 /* Home */,
 				14509A242435F5930044C7D1 /* OAuth */,
 			);
 			path = ViewModel;
@@ -178,6 +214,7 @@
 		140347D22429E45300E41F78 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				14D3830E243C734100B33F24 /* RefreshControl.swift */,
 				140347FB242B862D00E41F78 /* Common.swift */,
 				14AC98552430B5F100C51EFA /* ThirdPartyHeader.swift */,
 				145099A4243381AD0044C7D1 /* HNetworkTools.swift */,
@@ -190,6 +227,9 @@
 		140347D32429E45300E41F78 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				14D3833A243DA71F00B33F24 /* Compose */,
+				14D382D22438DB6600B33F24 /* OAuth */,
+				14748AE12438D11E004CEC32 /* Home */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -197,6 +237,7 @@
 		140347D42429E45300E41F78 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				14D38312243CC36000B33F24 /* Compose */,
 				140347DE2429E45300E41F78 /* Main */,
 				140347D52429E45300E41F78 /* Home */,
 				140347DB2429E45300E41F78 /* Message */,
@@ -220,6 +261,11 @@
 		140347D62429E45300E41F78 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				14D382D82438E6E000B33F24 /* HomeCell.swift */,
+				14D382DA2438E84900B33F24 /* HomeOriginalView.swift */,
+				14D382E22439B70500B33F24 /* HomeRetweetView.swift */,
+				14D382E02439ACA600B33F24 /* HomeBottomView.swift */,
+				14D382E42439C5C400B33F24 /* HomeOriginalPictureView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -338,6 +384,7 @@
 			children = (
 				140347F5242B511B00E41F78 /* Ext+UIBarButtonItem.swift */,
 				1455D2A92436E42800E937B4 /* Ext+UIImageView.swift */,
+				14D38310243C7DC400B33F24 /* Ext+String.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -345,7 +392,6 @@
 		145099C62434747A0044C7D1 /* OAuth */ = {
 			isa = PBXGroup;
 			children = (
-				145099F72434DC3F0044C7D1 /* Model */,
 				145099C72434747A0044C7D1 /* VIew */,
 				145099C82434747A0044C7D1 /* ViewController */,
 			);
@@ -365,14 +411,6 @@
 				145099C9243474A60044C7D1 /* HOAuthViewController.swift */,
 			);
 			path = ViewController;
-			sourceTree = "<group>";
-		};
-		145099F72434DC3F0044C7D1 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				145099F82434DC630044C7D1 /* HUserAccountModel.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		14509A242435F5930044C7D1 /* OAuth */ = {
@@ -405,6 +443,67 @@
 				1455D2A72436DDEE00E937B4 /* HWelcomeViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		14748AE12438D11E004CEC32 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				14748AE22438D130004CEC32 /* HHomeModel.swift */,
+				14D382DC2438F3FF00B33F24 /* HUserModel.swift */,
+				14D382E62439C79600B33F24 /* HPictureModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		14D382D22438DB6600B33F24 /* OAuth */ = {
+			isa = PBXGroup;
+			children = (
+				14D382D32438DB6600B33F24 /* HUserAccountModel.swift */,
+			);
+			path = OAuth;
+			sourceTree = "<group>";
+		};
+		14D382D52438DB8900B33F24 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				14D382D62438DB9800B33F24 /* HHomeViewModel.swift */,
+				14D382DE2438F74400B33F24 /* HStatusViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		14D38312243CC36000B33F24 /* Compose */ = {
+			isa = PBXGroup;
+			children = (
+				14D38313243CC36000B33F24 /* View */,
+				14D38323243CC36000B33F24 /* ViewController */,
+			);
+			path = Compose;
+			sourceTree = "<group>";
+		};
+		14D38313243CC36000B33F24 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				14D38334243CC79500B33F24 /* HComposeView.swift */,
+				14D38336243DA66200B33F24 /* HComposeButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		14D38323243CC36000B33F24 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				14D3833E243DC42400B33F24 /* HComposeViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		14D3833A243DA71F00B33F24 /* Compose */ = {
+			isa = PBXGroup;
+			children = (
+				14D3833B243DA73000B33F24 /* HComposeModel.swift */,
+			);
+			path = Compose;
 			sourceTree = "<group>";
 		};
 		32D8F1717B57176C15E8B8FE /* Pods */ = {
@@ -480,6 +579,7 @@
 			files = (
 				140347F1242AF74D00E41F78 /* LaunchScreen.storyboard in Resources */,
 				140347C62429E20F00E41F78 /* Assets.xcassets in Resources */,
+				14D38339243DA70900B33F24 /* compose.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,26 +633,42 @@
 			buildActionMask = 2147483647;
 			files = (
 				140347E92429F7C400E41F78 /* HMessageViewController.swift in Sources */,
+				14D382DD2438F3FF00B33F24 /* HUserModel.swift in Sources */,
 				145099A5243381AD0044C7D1 /* HNetworkTools.swift in Sources */,
+				14D382E72439C79600B33F24 /* HPictureModel.swift in Sources */,
 				14AC98562430B5F100C51EFA /* ThirdPartyHeader.swift in Sources */,
-				145099F92434DC630044C7D1 /* HUserAccountModel.swift in Sources */,
 				140347E72429F7BA00E41F78 /* HHomeViewController.swift in Sources */,
+				14D382DF2438F74400B33F24 /* HStatusViewModel.swift in Sources */,
+				14D382E32439B70500B33F24 /* HomeRetweetView.swift in Sources */,
 				14AC985224305FFE00C51EFA /* HBaseViewController.swift in Sources */,
+				14D3833C243DA73000B33F24 /* HComposeModel.swift in Sources */,
 				140347EB2429F7D200E41F78 /* HDiscoverViewController.swift in Sources */,
 				140347BD2429E20900E41F78 /* AppDelegate.swift in Sources */,
 				14509A202435EB320044C7D1 /* MyAdapter.swift in Sources */,
+				14D38335243CC79500B33F24 /* HComposeView.swift in Sources */,
 				1455D2A82436DDEE00E937B4 /* HWelcomeViewController.swift in Sources */,
 				140347FC242B862D00E41F78 /* Common.swift in Sources */,
 				140347EF242A034F00E41F78 /* HTabBar.swift in Sources */,
 				1455D2AA2436E42800E937B4 /* Ext+UIImageView.swift in Sources */,
+				14D38311243C7DC400B33F24 /* Ext+String.swift in Sources */,
 				140347F8242B567600E41F78 /* HTempViewController.swift in Sources */,
+				14D3833F243DC42400B33F24 /* HComposeViewController.swift in Sources */,
 				140347BF2429E20A00E41F78 /* SceneDelegate.swift in Sources */,
+				14D382DB2438E84900B33F24 /* HomeOriginalView.swift in Sources */,
+				14D38337243DA66200B33F24 /* HComposeButton.swift in Sources */,
+				14D382D92438E6E000B33F24 /* HomeCell.swift in Sources */,
+				14D382D42438DB6600B33F24 /* HUserAccountModel.swift in Sources */,
+				14D3830F243C734100B33F24 /* RefreshControl.swift in Sources */,
 				140347E52429ED9500E41F78 /* HTabBarViewController.swift in Sources */,
 				145099CA243474A60044C7D1 /* HOAuthViewController.swift in Sources */,
 				140347ED2429F7DD00E41F78 /* HMineViewController.swift in Sources */,
+				14748AE32438D130004CEC32 /* HHomeModel.swift in Sources */,
 				14509A262435F5930044C7D1 /* HOAuthViewModel.swift in Sources */,
+				14D382E52439C5C400B33F24 /* HomeOriginalPictureView.swift in Sources */,
+				14D382D72438DB9800B33F24 /* HHomeViewModel.swift in Sources */,
 				140347F6242B511B00E41F78 /* Ext+UIBarButtonItem.swift in Sources */,
 				14AC98542430604500C51EFA /* HVisitorView.swift in Sources */,
+				14D382E12439ACA600B33F24 /* HomeBottomView.swift in Sources */,
 				140347FA242B7C4200E41F78 /* HNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

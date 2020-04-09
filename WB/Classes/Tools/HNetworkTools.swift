@@ -33,7 +33,7 @@ class HNetworkTools: NSObject {
 
             switch response.result {
             case .success(let json):
-                print("json: \(json)")
+//                print("json: \(json)")
                 success(json)
             case .failure(let error):
                 debugPrint(error.localizedDescription)
@@ -87,13 +87,40 @@ extension HNetworkTools {
     }
     
     /// 获取用户信息
-    func getUserInfo(model: HUserAccountModel,  success: @escaping (Any?)->(), failure: @escaping (Any?)->()) {
+    func getUserInfo(model: HUserAccountModel, success: @escaping (Any?)->(), failure: @escaping (Any?)->()) {
         
         let urlString = "https://api.weibo.com/2/users/show.json"
         let parameter = [
             "access_token": model.access_token!,
             "uid": Int(model.uid!)!
         ] as [String: Any]
+        request(urlString: urlString, method: .get, parameters: parameter, success: { (res) in
+            success(res)
+        }) { (err) in
+            failure(err)
+        }
+    }
+}
+
+// MARK: 首页数据的获取
+extension HNetworkTools {
+/**
+- since_id    false    int64    若指定此参数，则返回ID比since_id大的微博（即比since_id时间晚的微博），默认为0。
+     - 所以, 该参数配合 下拉刷新全体数据
+     - 且传递就是最大的since_id
+     
+- max_id    false    int64    若指定此参数，则返回ID小于或等于max_id的微博，默认为0。
+     - 配合上拉加载数据
+     - 传递 max_id - 1
+**/
+    func getHomeData(since_id: Int64, max_id: Int64, success: @escaping (Any?)->(), failure: @escaping (Any?)->()) {
+        
+        let urlString = "https://api.weibo.com/2/statuses/home_timeline.json"
+        let parameter = [
+            "access_token": HOAuthViewModel.shared.access_token!,
+            "since_id": "\(since_id)",
+            "max_id": "\(max_id)"
+        ]
         request(urlString: urlString, method: .get, parameters: parameter, success: { (res) in
             success(res)
         }) { (err) in

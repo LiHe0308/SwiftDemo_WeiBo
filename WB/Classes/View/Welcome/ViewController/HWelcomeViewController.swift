@@ -82,7 +82,7 @@ class HWelcomeViewController: UIViewController {
     // 懒加载用户昵称
     private lazy var nameLabel: UILabel = {
         let lab = UILabel()
-        lab.font = UIFont.systemFont(ofSize: 14)
+        lab.font = UIFont.systemFont(ofSize: HNORMALFONTSIZE)
         lab.textColor = .darkGray
         lab.textAlignment = .center
         lab.alpha = 0
